@@ -1,8 +1,1 @@
-
-<<<<<<< HEAD
-=======
-DO OR DO NOT,THERE IS NO TRY.
-
->>>>>>> d02bef68b2878f3af310e8689d8c205b8aa9251d
-NO try there is,do or do not
-
+Do or do not, there is no try.

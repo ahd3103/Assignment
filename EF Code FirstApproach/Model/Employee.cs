@@ -1,24 +1,22 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EF_Code_FirstApproach.Model
+namespace Employee_management_system.Model
 {
     public class Employee
     {
-        [Key]
         public int Id { get; set; }
-        [Required]
-
-        public string FirstName { get; set; } = null!;
-        [Required]
-
-        public string LastName { get; set; } = null!;
-
-        public string EmailAddress { get; set; } = null!;
-
-        public int ContactNo { get; set; }
 
         [Required]
-        public string Gender { get; set; } = null!;
+        [StringLength(30)]
+        public string? Name { get; set; }
 
+        [Range(21, 100)]
+        public int Age { get; set; }
+
+        public Decimal Salary { get; set; }
+
+        public int DepartmentId { get; set; }
+
+        public Department? Department { get; set; }
     }
 }
